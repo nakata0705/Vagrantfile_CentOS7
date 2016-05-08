@@ -25,8 +25,3 @@ git clone https://github.com/nakata0705/meteor-react-redux-boilerplate.git /home
 cd /home/vagrant/my-killer-app/.client
 npm install
 npm install material-ui
-
-#sudo -u vagrant git clone https://github.com/mz026/universal-redux-template.git /home/vagrant/my-killer-app
-#cd /home/vagrant/my-killer-app; rm -rf .git; git init
-#sudo -u vagrant npm install
-#sudo -u vagrant npm install material-ui	
