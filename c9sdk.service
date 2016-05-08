@@ -1,0 +1,18 @@
+[Unit]
+Description=Cloud9 SDK program
+After=network.target
+
+[Service]
+User=vagrant
+Group=vagrant
+WorkingDirectory=/home/vagrant/c9sdk
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=c9sdk
+ExecStart=/home/vagrant/.nvm/versions/node/v4.4.4/bin/node /home/vagrant/c9sdk/server.js -w /home/vagrant -l 192.168.1.254 -p 8080 -a user:pass
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
