@@ -8,6 +8,8 @@
 
 # Getting Started
 
+Install Vagrant, clone this repository and move into the directory, then create a new VM with a command "vagrant up".
+
 # Usage
 
 ## Access Cloud9 console
