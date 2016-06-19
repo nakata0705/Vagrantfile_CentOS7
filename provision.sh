@@ -2,7 +2,7 @@
 
 sudo yum -y install glibc-static git unzip
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 
 echo "source /home/vagrant/.nvm/nvm.sh" >> /home/vagrant/.profile
 source /home/vagrant/.profile
@@ -30,8 +30,3 @@ mkdir -p /home/vagrant/my-killer-app/public/dhtmlxGantt
 curl -L -o /home/vagrant/my-killer-app/public/dhtmlxGantt/dhtmlxGantt.zip -O http://dhtmlx.com/x/download/regular/dhtmlxGantt.zip
 cd /home/vagrant/my-killer-app/public/dhtmlxGantt
 unzip dhtmlxGantt.zip
-
-#sudo -u vagrant git clone https://github.com/mz026/universal-redux-template.git /home/vagrant/my-killer-app
-#cd /home/vagrant/my-killer-app; rm -rf .git; git init
-#sudo -u vagrant npm install
-#sudo -u vagrant npm install material-ui	
